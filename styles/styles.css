@@ -20,6 +20,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:hover {
@@ -40,6 +41,12 @@ header {
     justify-content: space-around;
 }
 
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
 .container {
     max-width: var(--max-weigh);
     margin: 0 auto;
@@ -56,20 +63,53 @@ header {
     background-color: var(--background-nav);
 }
 
-.nav ul {
+.footer {
+    padding: 30px;
+}
+
+.nav ul, .footer ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .info-text {
-    /*margin-left: 40px;*/
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 .info-text h1 {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 500;
+}
+
+.list {
+    padding-left: 15px;
+}
+.list li{
+    padding: 6px;
+}
+.list li:before {
+    padding-right: 10px;
+    font-weight: bold;
+    color: #C0C0C0;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+.list li:hover:before {
+    color: #337AB7;
+    content: "\2714";
+}
+
+.list-num {
+    padding-left: 35px;
+}
+
+.list-num > li {
+    padding-bottom: 15px;
+}
+
+.pre {
+    padding-left: 100px;
 }
